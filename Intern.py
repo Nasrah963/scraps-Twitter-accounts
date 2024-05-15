@@ -42,7 +42,7 @@ class TwitterScraper:
         print(f"{self.word} was mentioned {self.total_count} times in the last {self.round} minutes.")
 
         if self.round == self.interval:
-            print(f"{self.word} was mentioned {self.total_count} times in the last {self.interval * self.interval} minutes.")
+            print(f"{self.word} was mentioned {self.total_count} times in the last {self.interval} minutes.")
             self.round = 0
             self.total_count = 0
             self.tweet_texts = []
